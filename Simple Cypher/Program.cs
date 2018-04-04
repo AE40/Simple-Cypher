@@ -8,7 +8,7 @@ namespace Simple_Cypher {
 	class Program {
 
 		static int codeLength = 5;
-		static string charset = "abcdef";//ghijklmnopqrstuvwxyz0123456789";
+		static string charset = "abcdefghijklmnopqrstuvwxyz0123456789";
 
 		static void Main( string [] args ) {
 
