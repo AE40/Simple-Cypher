@@ -11,6 +11,21 @@ namespace Simple_Cypher {
 		static string charset = "abcdef";//ghijklmnopqrstuvwxyz0123456789";
 
 		static void Main( string [] args ) {
+
+
+			Console.WriteLine( "What code length would you like?" );
+
+			while( true ) {
+				string s = Console.ReadLine();
+				int num;
+				if( int.TryParse( s, out num ) ) {
+					codeLength = num;
+					break;
+				} else {
+					Console.WriteLine( "That's not a number, enter a number" );
+				}
+			}
+
 			while( true ) {
 
 				string code = GenerateCode();
